@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>B1gWin</title>
+<meta name="description" content="CSGODouble.gg" />
+<meta name="keywords" content="csgodouble,roulette,roullete,csgo,csgoroulette,csgodouble.gg,csgodouble.com,csgo double" />
+<meta charset="utf-8">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta property="og:image" content="http://csgodouble.gg/images/metadata.png" />
+<meta property="og:description" content="CSGODouble.gg - Roulette" />
+<meta property="og:title" content="CSGODouble.gg" />
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "CSGODouble.gg",
+  "url" : "https://csgodouble.gg",
+  "sameAs" : [
+    "https://steamcommunity.com/groups/csgodouble_gg",
+    "https://twitter.com/csgodoublegg",
+    "https://www.facebook.com/CSGODouble.gg/"
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel='stylesheet' type='text/css'>
+<link href="new.css" type="text/css" rel="stylesheet">
+<link id="style" href="blacc.css" rel="stylesheet">
+<script type="text/javascript" src="jquery2.js"></script>
+<script type="text/javascript" src="bootbox.min.js"></script>
+<script src="cookie.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="idk.css" type="text/css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css" media="screen,projection" />
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="tinysort.js"></script>
+<script src="1.4.js"></script>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/android-icon-192x192.png">
+</head>
+<style>
+    .navbar {
+      margin-bottom: 0 !important;
+    }
+    @media screen and (min-width: 1600px) {
+      .col-sm-4 {
+        width: 27%;
+      }
+      .col-sm-8 {
+        width: 73%;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .col-sm-8 {
+        padding-left: 0;
+      }
+    }
+  </style>
+<body>
+<script type="text/javascript">
+      var SETTINGS = ["dark", "confirm", "sounds", "dongers", "hideme", "shortnames"];
+      if (!String.prototype.format) {
+        String.prototype.format = function() {
+          var args = arguments;
+          return this.replace(/{(\d+)}/g, function(match, number) {
+            return typeof args[number] != 'undefined' ? args[number] : match;
+          });
+        };
+      }
+
+      function acceptAgreement() {
+        setCookie("agreement", 1)
+      }
+
+      function setCookie(key, value) {
+        var exp = new Date();
+        exp.setTime(exp.getTime() + (365 * 24 * 60 * 60 * 1000));
+        document.cookie = key + "=" + value + "; expires=" + exp.toUTCString();
+      }
+
+      function getCookie(key) {
+        var patt = new RegExp(key + "=([^;]*)");
+        var matches = patt.exec(document.cookie);
+        if (matches) {
+          return matches[1];
+        }
+        return "";
+      }
+
+      function formatNum(x) {
+        if (Math.abs(x) >= 10000) {
+          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        return x;
+      }
+      $(document).ready(function() {
+        for (var i = 0; i < SETTINGS.length; i++) {
+          var v = getCookie("settings_" + SETTINGS[i]);
+          if (v == "true") {
+            $("#settings_" + SETTINGS[i]).prop("checked", true);
+          } else if (v == "false") {
+            $("#settings_" + SETTINGS[i]).prop("checked", false);
+          }
+        }       });
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91768543-1', 'auto');
+  ga('send', 'pageview');
+  
+</script>
+<script type="text/javascript">
+
+function resizeFooter() {
+        var f = $('.footer').outerHeight(true);
+        var w = $(window).outerHeight(true);
+        $('body').css('margin-bottom',f);
+}
+$(window).resize(function() {resizeFooter();});
+$(document).ready(function() {resizeFooter();});
+</script>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a href="/" class="navbar-brand"><img src="/images/logo-d.png" height="25" width="210"></a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li><a href="/deposit.php">Deposit</a></li>
+<li><a href="/withdraw.php">Withdraw</a></li>
+<li><a href="/weekly.php" style="color:#FFD700 !important">Leaderboard</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<a href="?login"><img style="margin-top: 3px;" src="/images/steam_login.png"></a>
+</ul>
+</div>
+</div>
+</nav>
+<div class="modal fade" id="my64id">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title"><b>My SteamID64</b></h4>
+</div>
+<div class="modal-body">
+<b></b> </div>
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+  var SETTINGS = ["dark", "confirm","sounds","dongers","hideme","shortnames"];
+  if (!String.prototype.format) {
+    String.prototype.format = function() {
+      var args = arguments;
+      return this.replace(/{(\d+)}/g, function(match, number) { 
+        return typeof args[number] != 'undefined'
+          ? args[number]
+          : match
+        ;
+      });
+    };
+  }
+  function setCookie(key,value){
+    var exp = new Date();
+    exp.setTime(exp.getTime()+(365*24*60*60*1000));
+    document.cookie = key+"="+value+"; expires="+exp.toUTCString();
+  }
+  function getCookie(key){
+    var patt = new RegExp(key+"=([^;]*)");
+    var matches = patt.exec(document.cookie);
+    if(matches){
+      return matches[1];
+    }
+    return "";
+  }
+  function formatNum(x){
+    if(Math.abs(x)>=10000){
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    return x;
+  }
+  $(document).ready(function(){
+    for(var i=0;i<SETTINGS.length;i++){
+      var v = getCookie("settings_"+SETTINGS[i]);
+      if(v=="true"){
+        $("#settings_"+SETTINGS[i]).prop("checked",true); 
+      }else if(v=="false"){
+        $("#settings_"+SETTINGS[i]).prop("checked",false);  
+      }     
+    }
+  });
+</script>
+<ul id="contextMenu" class="dropdown-menu" role="menu" style="display:none">
+<li><a tabindex="-1" href="#" data-act="0">Username</a></li>
+<li><a tabindex="-1" href="#" data-act="1">Mute player</a></li>
+<li><a tabindex="-1" href="#" data-act="2">Kick player</a></li>
+<li><a tabindex="-1" href="#" data-act="3">Send credits</a></li>
+<li><a tabindex="-1" href="#" data-act="4">Ignore</a></li>
+</ul>
+<div class="modal fade" id="settingsModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title"><b>Settings</b></h4>
+</div>
+<div class="modal-body">
+<form>
+<div class="checkbox">
+<label>
+<input type="checkbox" id="settings_dark" checked>
+<strong>Enable dark theme</strong>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" id="settings_confirm" checked>
+<strong>Confirm all bets over 10,000 credits</strong>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" id="settings_sounds" checked>
+<strong>Enable sounds</strong>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" id="settings_dongers">
+<strong>Display in $ amounts</strong>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" id="settings_hideme">
+<strong>Hide my profile link in chat</strong>
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" id="settings_shortnames">
+<strong>Hide ranks in chat</strong>
+</label>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-success" data-dismiss="modal" onclick="saveSettings()">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="promoModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title"><b>Redeem Promo Code</b></h4>
+</div>
+<div class="modal-body">
+<div class="form-group">
+<label for="exampleInputEmail1">Promo code</label>
+<input type='text' class='form-control' id='promocode' value=''> </div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-success" data-dismiss="modal" onclick="redeem()">Redeem</button>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+function redeem(){
+	var code = $("#promocode").val();
+	$.ajax({
+		url:"/scripts/_redeem.php?code="+code,
+		success:function(data){		
+			try{
+				data = JSON.parse(data);
+				console.log(data);
+				if(data.success){
+					bootbox.alert("Success! You've received "+data.credits+" credits.");					
+				}else{
+					bootbox.alert(data.error);
+				}
+			}catch(err){
+				bootbox.alert("Javascript error: "+err);
+			}
+		},
+		error:function(err){
+			bootbox.alert("AJAX error: "+err);
+		}
+	});
+}
+</script>
+<div class="modal fade" id="Agreement">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title"><b style="color: red;">Agreement on the use of the site</b></h4>
+</div>
+<div class="modal-body">
+<p>Dear users, continuing to use our site ("B1gWin.tk") you agree to the <a target="_blank" href="/tos.php">user agreement</a> and acknowledge that you are 18 years or more.</p>
+<p>If you do not agree with it and/or you are under 18, then immediately withdraw all the money from your account and do not continue the game, otherwise your account may be restricted/removed as a violation of the <a target="_blank" href="/tos.php">user agreement</a>.</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger btn-block" data-dismiss="modal" onclick="acceptAgreement();">I accept and confirm!</button>
+</div>
+</div>
+</div>
+</div>
+<div id="sidebar" class="hidden-xs">
+<div style="cursor:pointer">
+<div style="position:relative" class="side-icon noselect active" data-tab="1">
+<i class="fa fa-commenting fa-lg"></i>
+<span style="position:absolute;bottom:3px;right:3px" class="label label-danger" id="newMsg"></span>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div id="pullout">
+<div id="tab1" class="tab-group" style="height: 685px;">
+<div style="margin:5px; padding-top: 5px;">
+<select class="form-control" id="lang">
+<option value="1">Main Room</option>
+<option value="2">Predict Room</option>
+<option value="3">Multi-Language Room</option>
+<option value="4">Trade Room</option>
+</select>
+</div>
+<div class="divchat" id="chatArea"></div>
+<form id="chatForm">
+<div style="margin: 5px">
+<div class="input-group" style="margin-bottom: 5px">
+<input type="text" class="form-control" placeholder="Type here to chat..." id="chatMessage" maxlength="200">
+<div class="input-group-btn dropup">
+<button id="Smiles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" type="button" class="btn btn-default dropdown-toggle" aria-label="Smiles">
+<span class="glyphicon fa fa-smile-o fa-lg"></span>
+</button>
+<ul class="dropdown-menu smiles" style="padding: 10px;" aria-labelledby="Smiles">
+<li>
+<img data-smile="BibleThump" src="/images/twitch/BibleThump.png">
+<img data-smile="CA" src="/images/twitch/CA.png">
+<img data-smile="CO" src="/images/twitch/CO.png">
+<img data-smile="Tb" src="/images/twitch/Tb.png">
+<img data-smile="deIlluminati" src="/images/twitch/deIlluminati.png">
+</li>
+<li>
+<img data-smile="Fire" src="/images/twitch/Fire.png">
+<img data-smile="Kappa" src="/images/twitch/Kappa.png">
+<img data-smile="KappaPride" src="/images/twitch/KappaPride.png">
+<img data-smile="KappaRoss" src="/images/twitch/KappaRoss.png">
+<img data-smile="Keepo" src="/images/twitch/Keepo.png">
+</li>
+<li>
+<img data-smile="Kreygasm" src="/images/twitch/Kreygasm.png">
+<img data-smile="heart" src="/images/twitch/heart.png">
+<img data-smile="offFire" src="/images/twitch/offFire.png">
+<img data-smile="PJSalt" src="/images/twitch/PJSalt.png">
+<img data-smile="rip" src="/images/twitch/rip.png">
+</li>
+<li>
+ <img data-smile="FailFish" src="/images/twitch/FailFish.png">
+<img data-smile="Jaaman" src="/images/twitch/Jaaman.png">
+<img data-smile="4Head" src="/images/twitch/4Head.png">
+<img data-smile="LUL" src="/images/twitch/LUL.png">
+<img data-smile="DansGame" src="/images/twitch/DansGame.png">
+</li>
+<li>
+<img data-smile="FeelsBadMan" src="/images/twitch/FeelsBadMan.png">
+<img data-smile="WutFace" src="/images/twitch/WutFace.png">
+<img data-smile="PogChamp" src="/images/twitch/PogChamp.png">
+<img data-smile="SMOrc" src="/images/twitch/SMOrc.png">
+</li>
+</ul>
+</div>
+</div>
+<div class="pull-left">
+<b>Users online: <span id="isonline">0</span></b>
+</div>
+<div class="pull-right">
+<a href="#" class="clearChat"><b>Clear chat</b></a>
+</div>
+<br>
+<div class="checkbox pull-right" style="margin: 0px">
+<label class="noselect">
+<input type="checkbox" id="scroll"><b>Pause chat</b>
+</label>
+</div>
+<div class="pull-left">
+<a href="#" data-toggle="modal" data-target="#chatRules">Chat rules</a>
+</div>
+</div>
+</form>
+
+</div>
+<div id="tab2" class="tab-group hidden"></div>
+<div id="tab3" class="tab-group hidden"></div>
+</div>
+</div>
+<div id="mainpage" class="col-xs-12 col-sm-8">
+
+<div class="alert alert-success text-center" style="margin-top: 10px; margin-bottom: 10px !important;">
+<button type="button" class="close" data-dismiss="alert">×</button><b><i class="fa fa-exclamation-circle"></i> Add <a href="https://steamcommunity.com/my/edit" target="_blank">B1gWin.tk</a> to your nickname and join <a href="https://steamcommunity.com/groups/CSGODoubleGG_" target="_blank">our Group</a> to join daily giveaways (10000 credits!). Check lucky winners <a href="/winners.php">here</a>!<br />Also check out our giveaways on <a href="https://www.facebook.com/CSGODouble.gg/photos/a.1609354639374080.1073741828.1508232579486287/1745044462471763/?type=3&theater" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a> and <a href="https://twitter.com/CSGODoublegg/status/930899578047655936" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>!</b>
+</div>
+<div class="text-center" style="margin-bottom:10px;">
+<div class="progress text-center" style="height:50px;margin-bottom:5px;margin-top:5px">
+<span id="banner"></span>
+<div class="progress-bar progress-bar-danger" id="counter"></div>
+</div>
+<div id="case" style="margin-bottom: 5px; background-position: -710.5px 0px;">
+<div id="pointer"></div>
+</div>
+<div class="well text-center" style="padding:5px;margin-bottom:5px">
+<div id="past"></div>
+</div>
+<div class="well" style="margin-bottom:5px">
+<div class="input-btn bet-buttons">
+<div class="form-group">
+ <span style="font-size:18px;font-weight:bold">Balance: <span id="dongers"></span><span id="balance">0</span> <i style="cursor:pointer" class="fa fa-refresh noselect" id="getbal"></i>
+</span>
+</div>
+<div class="form-group">
+<div class="btn-group">
+<button type="button" class="btn btn-default betshort" data-action="clear">Clear</button>
+<button type="button" class="btn btn-default betshort" data-action="last">Last</button>
+<button type="button" class="btn btn-default betshort" data-action="1">+1</button>
+<button type="button" class="btn btn-default betshort" data-action="10">+10</button>
+<button type="button" class="btn btn-default betshort" data-action="100">+100</button>
+<button type="button" class="btn btn-default betshort" data-action="1000">+1000</button>
+<button type="button" class="btn btn-default betshort" data-action="half"> 1/2 </button>
+<button type="button" class="btn btn-default betshort" data-action="double"> x2 </button>
+<button type="button" class="btn btn-default betshort" data-action="max">Max</button>
+</div>
+</div>
+<input type="text" class="form-control input-lg" placeholder="Bet amount..." id="betAmount">
+</div>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-xs-4" style="padding-right:0px">
+<div class="panel panel-default bet-panel" id="panel1-7">
+<div class="panel-heading">
+<button class="btn btn-danger btn-lg  btn-block betButton" data-lower="1" data-upper="7">1 to 7</button>
+</div>
+<div class="panel-body" style="padding:0px">
+<div class="my-row">
+<div class="mytotal">0</div>
+</div>
+<div class="total-row">
+<div class="pull-left">Total bet</div>
+<div class="pull-right total">0</div>
+</div>
+<ul class="list-group betlist"></ul>
+</div>
+</div>
+</div>
+<div class="col-xs-4">
+<div class="panel panel-default bet-panel" id="panel0-0">
+<div class="panel-heading">
+<button class="btn btn-success btn-lg  btn-block betButton" data-lower="0" data-upper="0">0</button>
+</div>
+<div class="panel-body" style="padding:0px">
+<div class="my-row">
+<div class="mytotal">0</div>
+</div>
+<div class="total-row">
+<div class="pull-left">Total bet</div>
+<div class="pull-right total">0</div>
+</div>
+<ul class="list-group betlist"></ul>
+</div>
+</div>
+</div>
+<div class="col-xs-4" style="padding-left:0px">
+<div class="panel panel-default bet-panel" id="panel8-14">
+<div class="panel-heading">
+<button class="btn btn-inverse btn-lg  btn-block betButton" data-lower="8" data-upper="14">8 to 14</button>
+</div>
+<div class="panel-body" style="padding:0px">
+<div class="my-row">
+<div class="mytotal">0</div>
+</div>
+<div class="total-row">
+<div class="pull-left">Total bet</div>
+<div class="pull-right total">0</div>
+</div>
+<ul class="list-group betlist"></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="chatRules">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title"><b>Chat Rules</b></h4>
+</div>
+<div class="modal-body" style="font-size:24px">
+<ol>
+<li>No Spamming</li>
+<li>No Begging for Credits</li>
+<li>No Promo Codes in Chat or Username</li>
+<li>No CAPS LOCK</li>
+<li>English only in Main Room</li>
+</ol>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-success btn-block" data-dismiss="modal">Got it!</button>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="/js/main.js?v=1511187166"></script>
+<script type="text/javascript" src="/js/theme.js"></script>
+<script type="text/javascript">
+      function saveSettings() {
+        for (var i = 0; i < SETTINGS.length; i++) {
+          setCookie("settings_" + SETTINGS[i], $("#settings_" + SETTINGS[i]).is(":checked"));
+        }
+        if ($("#settings_dongers").is(":checked")) {
+          $("#balance").html("please reload");
+        } else {
+          $("#balance").html("please reload");
+        }
+      }
+    </script>
+<footer class="footer">
+<div class="">
+<div class="pull-left" style="overflow:hidden">
+<a href="https://steamcommunity.com/groups/CSGODoubleGG_" target="_blank"><img class="rounded" alt="Steam Group" src="/images/social/steam_icon.png"></a>
+
+
+<a href="https://www.facebook.com/CSGODouble.gg/" target="_blank"><img class="rounded" alt="Facebook" src="/images/social/facebook_icon.png"></a>
+<a href="https://twitter.com/csgodoublegg" target="_blank"><img class="rounded" alt="Twitter" src="/images/social/twitter_icon.png"></a>
+</div>
+<div class="pull-right" style="overflow:hidden;">
+<a href="http://csgo.steamanalyst.com/" target="_blank"><img src="images/social/sa.gif"></a>
+</div>
+<ul class="list-inline" style="display:inline-block;margin-top:10px">
+<li>Copyright © 2017, CSGODouble.gg - All rights reserved.</li>
+<li><a href="/tos.php">Terms of Service</a></li>
+<li><a href="/faq.php">FAQ</a></li>
+<li><a href="/support.php?new">Contact Us</a></li>
+<li><a href="http://steampowered.com" target="_target">Powered by Steam</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>
